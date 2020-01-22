@@ -1,0 +1,55 @@
+/*------------NAVBAR------------*/
+
+.navbar__fondo {
+    background-color: #161616;
+}
+
+.navbar-brand {
+    font-size: 2.5rem;
+}
+
+
+/*------------HEADER------------*/
+
+.texto__header {
+    font-size: 1rem;
+}
+
+.fondo__header {
+    background-image: url("main.jpg");
+    /*Quiero esta img de fondo*/
+    /*La imagen va a cubrir el elemento que lo contiene*/
+}
+
+
+/*Colores*/
+
+.color1 {
+    background-color: #161616;
+    height: 100px;
+}
+
+.color2 {
+    background-color: #418B94;
+    height: 100px;
+}
+
+.color3 {
+    background-color: #F6C54D;
+    height: 100px;
+}
+
+.color4 {
+    background-color: #FC4148;
+    height: 100px;
+}
+
+
+/*-------------FOOTER-----------*/
+
+.footer-bg {
+    background-color: #418B94;
+    font-size: 2.3125rem;
+    text-align: center;
+    padding: 2.5rem;
+}
