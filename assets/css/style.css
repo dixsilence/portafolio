@@ -1,3 +1,6 @@
+                    body {
+                        font-family: 'Nunito', sans-serif;
+                    }
                     /*------------NAVBAR------------*/
                     
                     .navbar__fondo {
@@ -28,12 +31,23 @@
                     }
                     
                     .texto__introductorio {
-                        padding: 22rem 0;
+                        padding: 20rem;
+                    }
+                    
+                    @media (max-width: 767.98px) {
+                        .texto__introductorio p {
+                            display: none;
+                        }
+                        .texto__introductorio h1 {
+                            text-align: center;
+                            bottom: -4rem!important;
+                        }
                     }
                     
                     .text__header {
                         padding-bottom: 1rem;
                         text-align: left;
+                        width: 100%;
                     }
                     
                     .text__header p {
@@ -43,35 +57,18 @@
                     .fondo__header {
                         background-image: url("main.jpg");
                     }
-                    /*Quiero esta img de fondo*/
-                    /*La imagen va a cubrir el elemento que lo contiene*/
-                    /*Colores*/
+                    /*Colores
                     
-                    .color1 {
+               
                         background-color: #161616;
-                        height: 100px;
-                    }
-                    
-                    .color2 {
+             
                         background-color: #418B94;
-                        height: 100px;
-                    }
-                    
-                    .color3 {
+             
                         background-color: #F6C54D;
-                        height: 100px;
-                    }
-                    
-                    .color4 {
+           
                         background-color: #FC4148;
-                        height: 100px;
-                    }
+                        */
                     /*----------carousel------------*/
-                    
-                    .color2 {
-                        background-color: #418B94;
-                        height: 100px;
-                    }
                     /*-------------FOOTER-----------*/
                     
                     .footer-bg {
@@ -217,4 +214,3 @@
                         left: 50%;
                         top: calc(50% - 3px);
                     }
-                    /*íconos*/
