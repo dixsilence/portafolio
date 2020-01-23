@@ -1,4 +1,4 @@
-                    body {
+                    body * {
                         font-family: 'Nunito', sans-serif;
                     }
                     /*------------NAVBAR------------*/
@@ -91,11 +91,16 @@
                         font-size: 3rem;
                         padding: 1rem;
                     }
+                    /*-----------EXPERIENCIA--------------*/
                     /*------------ Section 3 ------------*/
                     
                     .section-3-box {
                         margin-top: 30px;
                         text-align: left;
+                    }
+                    
+                    .experiencia {
+                        background-color: rgba(186, 178, 224, 0.493);
                     }
                     
                     .section-3-box .section-3-box-icon {
