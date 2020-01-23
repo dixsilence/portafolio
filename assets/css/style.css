@@ -6,20 +6,44 @@
 
 .navbar-brand {
     font-size: 2.5rem;
+    font-family: 'Kreon', serif;
 }
 
 
 /*------------HEADER------------*/
 
+.hero-section {
+    text-align: center;
+    /*Quiero el texto a la derecha*/
+    background-image: url(../img/main.jpg);
+    /*Quiero esta img de fondo*/
+    background-repeat: no-repeat;
+    /*La imagen no se repetirá como si fuera mosaico*/
+    background-size: cover;
+    /*La imagen va a cubrir el elemento que lo contiene*/
+    color: #ffffff;
+    /*Los elementos serán blancos*/
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    /* Esta línea la pasamos a em */
+    height: 100vh;
+}
+
+.hero-section h1 {
+    padding: 2rem;
+}
+
+
+/*
 .texto__header {
     font-size: 1rem;
 }
 
 .fondo__header {
-    background-image: url("main.jpg");
+    background-image: url("main.jpg");}
     /*Quiero esta img de fondo*/
-    /*La imagen va a cubrir el elemento que lo contiene*/
-}
+
+
+/*La imagen va a cubrir el elemento que lo contiene*/
 
 
 /*Colores*/
@@ -49,7 +73,63 @@
 
 .footer-bg {
     background-color: #418B94;
-    font-size: 2.3125rem;
     text-align: center;
     padding: 2.5rem;
+}
+
+.footer__brand {
+    font-size: 2.5rem;
+    font-family: 'Kreon', serif;
+    color: #ffffff;
+}
+
+.footer__text {
+    font-size: 1rem;
+}
+
+footer i {
+    font-size: 3rem;
+    padding: 1rem;
+}
+
+
+/***** Section 3 *****/
+
+.section-3-box {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.section-3-box .section-3-box-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    background: #8542a0;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #a365bc), color-stop(100%, #8542a0));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #a365bc 0%, #8542a0 100%);
+    /* IE10+ */
+    background: linear-gradient(to bottom, #a365bc 0%, #8542a0 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a365bc', endColorstr='#8542a0', GradientType=0);
+    /* IE6-9 */
+    font-size: 28px;
+    color: #fff;
+    line-height: 60px;
+    text-align: center;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.section-3-box h3 {
+    margin-top: 0;
+    padding: 0 0 10px 0;
 }
