@@ -53,7 +53,7 @@
     </nav>
     <!-- HEADER-->
     <header class="hero-section d-flex flex-column">
-        <div class="container  my-auto">
+        <div class="container about__container my-auto">
             <div class="row texto__header">
                 <div class="col-12 col-md-6 bg__color">
                     <h1 class="text-center">Rodrigo Calderón</h1>
@@ -66,10 +66,10 @@
     <!-- /HEADER-->
     <!-- ABOUT ME-->
     <section id="aboutme" class="d-flex flex-column about__fondo">
-        <div class="container m-auto about__container mt-auto">
+        <div class="container my-auto about__container">
 
             <h1>Quién soy</h1>
-            <h2>No sé pos men, para qué quieres saber :C</h2>
+
             <div class="row">
                 <div class="col-6">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima numquam dolore, harum consequatur cumque quis hic ullam maxime qui accusantium tempore alias animi omnis. Esse at cupiditate ipsam dignissimos suscipit!</p>
@@ -220,7 +220,8 @@
     <!--CAROUSEL-->
     <section class="carrusel">
         <h1 class="text-center">Últimos trabajos</h1>
-        <div class="container">
+        <div class="container p-5">
+
             <!--Contenedor del carrusel, que solo se muestra en large-->
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <!--div ID del carrusel + clases-->
@@ -228,29 +229,35 @@
                     <!--La parte de las imágenes, que son columnas-->
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-12 col-md-4"><img src="assets/img/slide-01.png" class="d-block w-100 p-0" alt="...">
-                                <p class="carousel__nombre pt-3">Sitio web Suricata</p>
+                            <div class="col-12 col-md-4">
+                                <a href="meet-coffee/index.html"> <img src="assets/img/slide-01.png" class="d-block w-100 p-0" alt="..."></a>
+                                <p class="text-center pt-3">Sitio web Suricata</p>
                                 <!-- La clase dice que se muestre entodos los dispositivos, que el ancho sea el 100% de la pantalla sin padding-->
                             </div>
-                            <div class="col-12 col-md-4"><img src="assets/img/slide-02.png" class="d-block w-100 p-0" alt="...">
-                                <p class="carousel__nombre pt-3">Sitio web Suricata</p>
+                            <div class="col-12 col-md-4">
+                                <a href="meet-coffee/index.html"><img src="assets/img/slide-02.png" class="d-block w-100 p-0" alt="..."></a>
+                                <p class="text-center pt-3">Sitio web Coupon</p>
                             </div>
-                            <div class="col-12 col-md-4"><img src="assets/img/slide-03.png" class="d-block w-100 p-0" alt="...">
-                                <p class="carousel__nombre pt-3">Sitio web Suricata</p>
+                            <div class="col-12 col-md-4">
+                                <a href="meet-coffee/index.html"><img src="assets/img/slide-03.png" class="d-block w-100 p-0" alt="..."></a>
+                                <p class="text-center pt-3">Sitio web IGUANA</p>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-12 col-md-4"><img src="assets/img/slide-04.png" class="d-block w-100" alt="...">
-                                <p class="carousel__nombre ">Sitio web Suricata</p>
+                            <div class="col-12 col-md-4">
+                                <a href="meet-coffee/index.html"><img src="assets/img/slide-04.png" class="d-block w-100 p-0" alt="..."></a>
+                                <p class="text-center pt-3">Sitio web Ricomida</p>
                             </div>
 
-                            <div class="col-12 col-md-4"><img src="assets/img/slide-05.png" class="d-block w-100" alt="...">
-                                <p class="carousel__nombre">Sitio web Suricata</pclass="carousel__nombre">
+                            <div class="col-12 col-md-4">
+                                <a href="meet-coffee/index.html"><img src="assets/img/slide-05.png" class="d-block w-100 p-0" alt="..."></a>
+                                <p class="text-center pt-3">Sitio web Meet&Greet</p>
                             </div>
-                            <div class="col-12 col-md-4"><img src="assets/img/slide-05.png" class="d-block w-100" alt="...">
-                                <p class="carousel__nombre">Sitio web Suricata</pclass="carousel__nombre">
+                            <div class="col-12 col-md-4">
+                                <img src="assets/img/slide-06.png" class="d-block w-100 p-0 btn" alt="...">
+                                <p class="text-center pt-3">ポケモン - テッカグヤ</p>
                             </div>
                         </div>
                     </div>
@@ -263,6 +270,14 @@
 
             </div>
         </div>
+        <!--Script para el modal-->
+        <!--
+        <script>
+            $('#modal-tekkaguya').on('shown.bs.modal', function() {
+                $('#myInput').trigger('focus')
+            })
+        </script>
+        -->
     </section>
 
     <!--/CAROUSEL-->
@@ -295,17 +310,14 @@
     <footer class="footer-bg">
         <div class="container">
             <div class="row">
-                <div class="col-8 text-white footer__text text-center">
+                <div class="row col-8  align-items-center footer__text ">
                     <p>© 2020 Copyright: Rodrigo Calderón B. <br>Todos los derechos e izquierdos reservados.
                     </p>
                 </div>
-                <div class="col-4 d-none d-sm-block text-white">
+                <div class="col-4 ">
                     <div id="icon-section">
-
-                        <i class="fab fa-twitter-square "></i>
-                        <i class="fab fa-facebook-square "></i>
-                        <i class="fab fa-deviantart "></i>
-                        <i class="fab fa-behance-square "></i>
+                        <a href="https://www.behance.net/dixsilence"> <i class="fab fa-deviantart"></i></a>
+                        <a href="http://www.linkedin.com/in/rodrigo-calderonb"></a><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
