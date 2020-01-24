@@ -1,0 +1,297 @@
+/*Formateo de body*/
+
+body {
+    text-align: center;
+    color: #000f08;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*----------------------------------*/
+
+
+/*Formateo de los textos*/
+
+h1 {
+    font-weight: 800;
+    font-size: 3.75em;
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.75em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+.subtitulo,
+h4,
+h5 {
+    font-weight: 400;
+}
+
+#ubicacion h2 {
+    margin: 1em auto;
+}
+
+.sweet-brown h3,
+.sweet-brown h5 {
+    margin-bottom: 0.5em;
+    /* Aquí se puede ver el ejemplo claro de cómo los em están condicionados por
+   el elemento padre */
+}
+
+#eventos h2 {
+    margin-bottom: 1em;
+}
+
+#eventos h3 {
+    margin: 1em auto;
+}
+
+#eventos a {
+    text-decoration: none;
+    color: #000f08;
+}
+
+
+/*Fin de formateo de los textos*/
+
+
+/*Menú y footer*/
+
+.fixed {
+    position: fixed;
+}
+
+.oscuro {
+    background: #000f08;
+    /*Quiero que el fondo sea negro rich*/
+    color: #ffffff;
+    /*Quiero que los elementos dentro sean blancos*/
+}
+
+.oscuro a {
+    color: #ffffff;
+    /*Quiero que los elementos "a" sean blancos*/
+    text-decoration: none;
+    /*Le quita los adornos a los "a"*/
+}
+
+
+/*Esto edita la sección de próxima charla*/
+
+.sweet-brown {
+    text-align: left;
+    /*Quiero el texto a la izquierda*/
+    background: #a4452c;
+    /*El fondo será rojo*/
+    color: #ffffff;
+    /*Los elementos dentro serán blancos*/
+    padding: 3.125em;
+    white-space: nowrap;
+}
+
+
+/*Esto edita la sección de inicio, es lo primero que vemos aparte del menú, asi que es nuestro hero-section*/
+
+.hero-section {
+    text-align: right;
+    /*Quiero el texto a la derecha*/
+    background-image: url(../img/bg-hero.png);
+    /*Quiero esta img de fondo*/
+    background-repeat: no-repeat;
+    /*La imagen no se repetirá como si fuera mosaico*/
+    background-size: cover;
+    /*La imagen va a cubrir el elemento que lo contiene*/
+    color: #ffffff;
+    /*Los elementos serán blancos*/
+    text-shadow: 0.125em 0.25em 0.125em #707070;
+    /* Esta línea la pasamos a em */
+    padding: 6.25rem 3.125rem;
+}
+
+section,
+footer {
+    padding: 3.125rem;
+    /*   margin-top:4.5rem;*/
+}
+
+
+/*-------------------------------------*/
+
+
+/*                MENÚ                 */
+
+
+/*-------------------------------------*/
+
+nav {
+    text-align: left;
+    padding: 1.25rem 4rem;
+    ;
+    width: 100vw;
+    /*el ancho del menú es el ancho del navegador, sino se ve cortito*/
+    position: fixed;
+    /*el menú se queda siempre a la vista*/
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+    vertical-align: middle;
+}
+
+
+/*-------------------------------------*/
+
+
+/*              Sección hero           */
+
+
+/*-------------------------------------*/
+
+#subtitulo {
+    text-align: right;
+    color: #ffffff;
+}
+
+
+/*-------------------------------------*/
+
+
+/*            Sección charla           */
+
+
+/*-------------------------------------*/
+
+.centrado {
+    width: 75%;
+    /*Esto hace que el elemento ocupe el 75% del ancho del contenedor*/
+    margin: 0 auto;
+    /*Esto centra el elemento horizontalmente*/
+}
+
+.charla-speaker,
+.charla-texto,
+.evento {
+    display: inline-block;
+    /*Esto le da inline-block, lo que hace que estos elementos se puedan poner uno al lado del otro, pudiendo editarse su altura o ancho*/
+}
+
+.charla-speaker {
+    width: 25%;
+    vertical-align: middle;
+    /*Alínea la foto al centro vertical*/
+}
+
+.charla-texto {
+    width: 72.5%;
+    vertical-align: middle;
+    /*Alínea el texto al centro vertical*/
+    margin-left: 2.5%;
+    /*Márgen izquierdo del texto con la imagen, 100 del ancho lo compone (ancho-foto)+(margen)+(ancho-texto) que es 25 + 2,5 + 72,5 */
+    white-space: normal;
+}
+
+.evento {
+    width: 30%;
+}
+
+.evento img {
+    width: 75%;
+}
+
+
+/*-------------------------------------*/
+
+
+/*                Íconos               */
+
+
+/*-------------------------------------*/
+
+.icono {
+    width: 2rem;
+    /*Colo lo pegamos online, podemos modificarlo con css, acá el tamaño*/
+}
+
+.icono svg {
+    fill: red;
+}
+
+
+/*Esto es el estilo para cambiar el color del ícono sgv */
+
+.color-taza {
+    filter: invert(100%);
+}
+
+footer i {
+    margin: 0 0.25em 0.5em 0.25em;
+}
+
+
+/*Fin formato del ícono del menú*/
+
+
+/*-------------------------------------*/
+
+
+/*         CSS evento01.HTML           */
+
+
+/*-------------------------------------*/
+
+.content {
+    width: 56%;
+    margin: 0 auto;
+}
+
+.content h1 {
+    text-align: left;
+    margin: 4.5625rem 0;
+    font-size: 2.8125rem;
+}
+
+.content img {
+    width: 100%;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.content p {
+    text-align: left;
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 1.1rem;
+}
+
+.content h4 {
+    text-align: left;
+    font-weight: 600;
+    margin-top: 30px;
+    font-size: 1.9rem;
+}

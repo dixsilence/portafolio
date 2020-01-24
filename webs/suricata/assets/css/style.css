@@ -1,0 +1,126 @@
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+    padding:0;
+}
+header {
+    text-align: center;
+    margin:5% 0;
+
+}
+/*------------------------------------------------------------------------------------*/
+/*FORMATO DEL NAV*/
+/*------------------------------------------------------------------------------------*/
+.fondo__navbar{
+    background-color:#E83E8C; /*Fondo del navbar*/
+}
+.navbar-brand img{
+    height:53px; /*Altura del logo*/
+}
+.nav-link a{
+    text-decoration: none;
+    color:white;
+}
+footer{
+    margin:0;
+    padding:0;    
+}
+/*------------------------------------------------------------------------------------*/
+/*FIN FORMATO DEL NAV*/
+/*------------------------------------------------------------------------------------*/
+
+.titulo{
+    font-weight: 700;
+    color:#707070;
+}
+
+/*------------------------------------------------------------------------------------*/
+/*FORMATO DE LAS CARDS*/
+/*------------------------------------------------------------------------------------*/
+
+/*Formato de columnas*/
+.contenedor{
+    width:100%;
+    margin:0;
+    text-align: center;
+}
+.card{
+    margin:10px;    
+}
+/*Formato de card*/
+
+.card-text, .card-title, .list-group-item, .card-body{
+    text-align: left;
+
+}
+.card-title {
+    font-weight: 700;
+}
+
+/*--------------------------------------------------------------------------------*/
+/*FIN FORMATO DE LAS CARDS*/
+/*------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------*/
+/*FORMATO FOOTER*/
+/*------------------------------------------------------------------------------------*/
+/*Footer*/
+footer{
+    margin:0;  
+    padding:0; 
+    text-align: center; 
+}
+/*Sección de iconos*/
+#icon-section{
+    background-color:#17A2B8;
+    margin: 0;
+    padding:0;
+}
+
+/*íconos*/
+.fab{
+    font-size: 3rem;
+    margin: 0.875rem;
+    vertical-align: middle;
+}
+/*Footer h3*/
+#icon-section h3{
+    display:inline-block; /*Con esto hago que el texto no sea bloque y la imagen quede al lado*/
+    vertical-align: middle;
+    margin:3.625rem 0;
+    margin-right:4.625rem;
+    font-weight: 700;
+}
+/*Contenedor del logo*/
+#logo-footer{
+    margin:0;
+    background-color:#E83E8C;
+}
+/*Logo del footer*/
+.footer-suricata{
+    margin: 40px auto;  /*Tiene un márgen de 40 en top/bottom y márgen automático en los costados. O sea centrado*/
+    height: 6.25rem;
+}
+/*------------------------------------------------------------------------------------*/
+/*FIN FORMATO FOOTER*/
+/*------------------------------------------------------------------------------------*/
+
+.contenedor-card{
+    margin:0;
+    border:0;
+    text-align: center;
+}
+.card-deck{
+    margin:0 auto;
+    margin-bottom:4rem;
+    width:60%;
+}
+.list-group-item{
+    border-radius:0 !important;
+    border-left: none;
+    border-right: none;
+}
+.card-link{
+    color:#17a2b8;
+}

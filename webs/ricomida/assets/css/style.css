@@ -1,0 +1,108 @@
+/*-------Formateo del body------------*/
+
+body {
+    font-family: 'Cabin', sans-serif;
+}
+
+body * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*---------Formateo delNavBAr---------------*/
+
+.brand__ricomida {
+    font-family: 'Lobster', cursive;
+}
+
+
+/*---------Formateo del header ---------------*/
+
+.titulo__header,
+.titulo__tarjetas {
+    font-weight: 700;
+    font-size: 3.5rem;
+}
+
+.bajada__header {
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+.barra__separacion {
+    border: solid #000000 1px;
+    margin-top: 2.5rem;
+}
+
+
+/*---------------Indicadores del carrusel---------------*/
+
+.carousel-indicators {
+    /*Esto es para que los indicadores fuera de la foto, sólo es para correrlo*/
+    bottom: -70px;
+}
+
+.carrusel {
+    margin-bottom: 100px;
+}
+
+.carousel-indicators .active {
+    /*Ojo este es background-color, no color. Esto le da color al indicador cuando está activo*/
+    background-color: black;
+}
+
+.carousel-indicators li {
+    /*Esto transforma las líneas de cuadrado a círculo más un color*/
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/*---------------RECETA---------------*/
+
+.ingredientes__lista {
+    /*Esto le quita el punteo a la lista*/
+    list-style-type: none;
+}
+
+.barra__receta {
+    width: 100%;
+}
+
+.receta h3 {
+    /*Esto hace que el h3 sea bloque en línea, para que la barra pueda tener el mismo ancho que este bloque*/
+    display: inline-block;
+}
+
+.preparacion__contenido ol {
+    list-style-position: inside;
+}
+
+.preparacion__contenido ol li {
+    padding-bottom: 1rem;
+}
+
+.ingredientes__contenido,
+.preparacion__contenido {
+    font-size: 1.25rem;
+}
+
+
+/*------------------------FOOTER----------------------*/
+
+.footer__brand {
+    font-family: 'Lobster', cursive;
+    font-size: 2.3125rem;
+    text-align: center;
+    padding: 2.5rem;
+}
+
+
+/*Para la OL hay que usar list-style-position para desplazar el número dentro del párrafo*/
+
+
+/*list-style-type le cambia el tipo de bullet, los simbolos son al UL y los números y letras romanas al OL, pueden ser caps o smallcaps*/

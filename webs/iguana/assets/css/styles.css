@@ -1,0 +1,117 @@
+/*Formato general*/
+
+body {
+margin: 0;
+padding:0;
+border:0;
+width:auto;
+text-align: center;
+background-color: #000000;
+}
+h1, h2, p{
+    font-family: 'Raleway', sans-serif;
+    color:#ffffff;
+}
+
+/*Formato del header y la imagen*/
+
+.top h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 3.125rem;
+    margin:7px 0px;
+}
+.principal{
+    width:100%;  
+    
+}
+
+/*Formato del mid section*/
+.desc-section{
+    height:348px;
+    background-color: #000000;
+}
+#desc-contenedor{
+    padding:38px 0;
+    text-align: center; /*hace que los elementos dentro del contenedor estén centrados*/
+    
+}
+.desc-text{
+    font-weight: 300;
+    width:40vw;
+    margin-right:10%;
+    display:inline-block; /*Con esto hago que el texto no sea bloque y la imagen quede al lado*/
+    vertical-align: middle;
+}
+.iguana-foto{
+    height:20vw;
+    vertical-align: middle;
+}
+
+/*Formato de sección característica*/
+#icons{
+    height:348px;/*Esto le da el tamaño a la sección*/
+    background-color: #1e1a13;
+    text-align: center;
+    vertical-align: middle;  
+    
+}
+.icons-section h1{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding:75px 0;
+    margin:0;
+}
+.icons-section p{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.icons-section i p{
+    font-weight: 300;
+}
+
+/*Formato de iconos*/
+.far,.fa,.fas{
+    font-size: 2rem; /*Quiero que sean de tamaño 2rem*/
+    color:#ffffff; /*Quiero que sean blancos*/
+    margin:0 50px; /*Quiero que tengan un margen cuadrado de 50px*/
+    vertical-align: middle; /*Van a estar al centro vertical del contenedor*/
+}
+/*Formato de galería*/
+
+#galeria{
+    height:348px; /*Le doy el tamaño al contenedor de la galería*/
+}
+#galeria img{
+    height: 200px; /*Cada imagen mide esto*/
+    margin: 73px 8px; /*Cada imagen tiene estos márgenes*/
+}
+
+
+
+/*Formato de footer*/
+#footer{
+    height:102px; /*La altura del footer será de 108px*/
+    background-color: #1e1a13; /*Color del footer*/
+}
+#footer h2{
+    font-size: 1.25rem; /*Tamaño de la fuente*/
+    font-weight: 300; /*Peso de la fuente */
+    text-align: center; /*Quiero que el texto esté al centro horizontal*/
+    vertical-align: middle;  /*Quiero que esé en el centro vertical*/
+    display:inline-block; /*Quiero que el texto sea en bloque lineal*/
+    margin: 38px 0px; /*Lo centro dentro del div padre*/
+}
+.anipedia {
+    text-decoration: none;/*Le quito el underscore al link*/
+    color:#ffffff;
+}
+/* Fin Formato de footer */
+
+
+/*DUDA
+
+Cuando achico la pantalla, el orden de todo se destruye. Me imagino que es porque no se contruyó responsivo.
+
+*/

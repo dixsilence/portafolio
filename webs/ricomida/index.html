@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Llamado al css de bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Llamado al css de fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <!--Llamado a mi css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Link de google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lobster&display=swap" rel="stylesheet">
+    <title>Ricomida</title>
+</head>
+
+<body>
+
+
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 fondo__barras">
+        <!--creamos el nav con los dos fondos de espacio y texto, más un padding y otra clase que no sé para qué es-->
+        <div class="container px-3">
+            <!--creamos un div contenedor para centrar el contenido con un padding de 3-->
+            <a class="navbar-brand" href="#">
+                <!--Hay un vínculo con una clase-->
+                <h1 class="brand__ricomida">Ricomida</h1>
+                <!--El texto del vínculo es un h1 con clase para darle formato-->
+            </a>
+            <!-- fin del vínculo-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Este es el botón del sanguche-->
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="# ">Inicio <span class="sr-only ">(current)</span></a>
+                    <a class="nav-item nav-link active" href="# ">Recetas <span class="sr-only ">(current)</span></a>
+                    <a class="nav-item nav-link active" href="# ">Nosotros <span class="sr-only ">(current)</span></a>
+                    <a class="nav-item nav-link active" href="# ">Contacto <span class="sr-only ">(current)</span></a>
+                </div>
+            </div>
+            <!-- Este creo que es el texto en línea, ojo que especifica el formato con una clase active y un span-->
+        </div>
+        <!-- Fin del container-->
+    </nav>
+    <!--Header-->
+    <header class="encabezado">
+        <div class="container">
+
+            <hr class="barra__separacion barra__carrusel d-md-block d-lg-none mt-4">
+            <div class="row justify-content-md-center mt-4 mb-5">
+                <div class="col-12 col-lg-6">
+                    <!--Esta parte dice que quiero un row de 1 columna, pero que cuando sea large, sea de 2-->
+                    <img src="assets/img/principal.jpg" alt="Receta principal" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <!-- En las clases hay que tratar de usar nombres descriptivos-->
+                    <h1 class="text-center text-lg-left titulo__header">PIZZA AL ESTILO CHICAGO CON ESPINACAS Y CHAMPIÑONES
+                    </h1>
+                    <!-- Acá le estoy diciendo que el texto tiene que estar centrado y que cuando la pantalla sea large se ponga a la izquierda-->
+                    <hr class="mt-4 barra__separacion barra__header">
+                    <p class="mt-4 text-center text-lg-left bajada__header">110 MIN / 6 A 8 PORCIONES</p>
+                    <div class="mt-4 text-center text-lg-left botones__header">
+                        <button type="submit" class="btn btn-outline-dark" data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo">Enviar por correo</button>
+                        <button type="submit" class="btn btn-outline-dark ml-4" data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos">Añadir a
+                            favoritos</button>
+
+
+                    </div>
+                    <!--Acá hay que poner un tooltip creo que en los botones, ojo que pide el bootsrap.js completo, seguir las instrucciones-->
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Sección del carrusel-->
+    <section class="carrusel">
+        <div class="container d-none d-lg-block">
+            <!--Contenedor del carrusel, que solo se muestra en large-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <!--div ID del carrusel + clases-->
+                <div class="carousel-inner">
+                    <!--La parte de las imágenes, que son columnas-->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-3"><img src="assets/img/slider-1.png" class="d-block w-100 p-0" alt="...">
+                                <!-- La clase dice que se muestre entodos los dispositivos, que el ancho sea el 100% de la pantalla sin padding-->
+                            </div>
+                            <div class="col-3"><img src="assets/img/slider-2.png" class="d-block w-100 p-0" alt="...">
+                            </div>
+                            <div class="col-3"><img src="assets/img/slider-3.png" class="d-block w-100 p-0" alt="...">
+                            </div>
+                            <div class="col-3"><img src="assets/img/slider-4.png" class="d-block w-100 p-0" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-3"><img src="assets/img/slider-5.png" class="d-block w-100" alt="..."></div>
+                            <div class="col-3"><img src="assets/img/slider-6.png" class="d-block w-100" alt="..."></div>
+                            <div class="col-3"><img src="assets/img/slider-7.png" class="d-block w-100" alt="..."></div>
+                            <div class="col-3"><img src="assets/img/slider-8.png" class="d-block w-100" alt="..."></div>
+                        </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <!--Lista ordenada de los botoncitos-->
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+
+            </div>
+        </div>
+    </section>
+    <!-- Sección de recetas-->
+    <section class="receta">
+        <div class="container">
+            <hr class="barra__separacion d-none d-lg-block">
+            <div class="row justify-content-md-center mt-4">
+                <div class="col-12 col-lg-6 text-sm-justify">
+                    <h3>INGREDIENTES
+                        <hr class="barra__separacion barra__receta d-none d-lg-block mt-1">
+                    </h3>
+                    <div class="mt-4 pb-5 ingredientes__contenido">
+                        <p>Masa</p>
+                        <ul class="mt-4 ingredientes__lista">
+                            <li>20 gr de levadura seca instantánea</li>
+                            <li>1 cucharadita de azúcar </li>
+                            <li>500 ml agua tibia</li>
+                            <li>100 ml aceite vegetal</li>
+                            <li>4 cucharadas de aceite de oliva</li>
+                            <li>65 gr harina de maíz fina (chuchoca) </li>
+                            <li>2 cucharaditas de sal</li>
+                            <li> 625 gr harina</li>
+                        </ul>
+                        <p class="mt-3">Salsa</p>
+                        <ul class="mt-4 ingredientes__lista">
+                            <li>5 cucharadas de aceite de oliva</li>
+                            <li>½ cebolla picada en cubos finos</li>
+                            <li>2 cucharaditas de sal</li>
+                            <li>3 cucharadas de Orégano Gourmet </li>
+                            <li>1 ½ cucharadas de Albahaca Gourmet</li>
+                            <li>2 tarro de tomates en cubos al natural</li>
+                            <li>2 cucharaditas de azúcar</li>
+                        </ul>
+
+                        <p class="mt-3">Relleno</p>
+                        <ul class="mt-4 ingredientes__lista">
+                            <li>½ cebolla en cubos</li>
+                            <li>500 gr hojas de espinacas picadas </li>
+                            <li>400 gr de champiñones, laminados </li>
+                            <li>300 gr de queso mozarella.</li>
+                            <li>4 cucharadas queso parmesano</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3>PREPARACIÓN
+                        <hr class="barra__separacion barra__receta d-none d-lg-block mt-1">
+                        <!--Que el HorizontalRule esté dentro del h3 hace que adopte todo el ancho de él y no del contenedor-->
+                    </h3>
+                    <div class="mt-4 preparacion__contenido">
+                        <ol class="pl-3">
+                            <li>Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar bien. Amasar y agregar el resto de harina, la cantidad
+                                necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener una masa lisa y elástica (agregar harina en el mesón a medida que se va amasando para que la masa no se pegue) . Poner la masa
+                                en un bol aceitado, tapar con un paño de cocina limpio y dejar reposar hasta que la masa duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40 minutos adicionales. </li>
+                            <li>Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la cebolla esté dorada. Agregar el ajo y cocinar por
+                                30 segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar con sal y pimienta a gusto. Reservar.</li>
+                            <li>Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el líquido que hayan votado los vegetales.
+                                Reservar.
+                            </li>
+                            <li>Calentar el horno a 220C.</li>
+                            <li>Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre las dos pizza, tapar con el queso mozarella,
+                                luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</li>
+                            <li>Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y dorada. Esperar unos minutos antes de desmoldar.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="tarjetas mb-5">
+        <div class="container">
+            <!--Un div para el separador-->
+
+            <hr class="barra__separacion my-5">
+
+            <!--Un div para el título de la sección-->
+            <div class="row justify-content-md-center mt-4">
+                <h1 class="titulo__tarjetas mb-5">RECETAS RELACIONADAS</h1>
+            </div>
+            <!--Un div para el card deck-->
+        </div>
+        <div class="container">
+            <div class="card-deck w-70 ">
+                <div class="card ">
+                    <img src="assets/img/recipe-card-1.png " class="card-img-top " alt="Panqueques con manjar y crema ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">PANQUEQUES CON MANJAR Y CREMA</h5>
+                        <p class="card-text ">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est vulputate nostra, blandit erat luctus faucibus orci.</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="assets/img/recipe-card-2.png " class="card-img-top " alt="Tiramisú ">
+                    <div class="card-body ">
+                        <h5 class="card-title ">TIRAMISÚ</h5>
+                        <p class="card-text ">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
+                    </div>
+                </div>
+                <div class="card ">
+                    <img src="assets/img/recipe-card-3.png " class="card-img-top " alt="Plateada">
+                    <div class="card-body ">
+                        <h5 class="card-title ">PLATEADA</h5>
+                        <p class="card-text ">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--TYPEFORM-->
+    <section class="newsletter ">
+        <div class="typeform-widget" data-url="https://rodrigoc941149.typeform.com/to/iwQmRm" style="width: 100%; height: 500px;"></div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="bg-dark ">
+        <h4 class="footer__brand text-white">Ricomida</p>
+    </footer>
+
+
+
+
+    <!--JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
+    <!-- TOOLTIP INIT-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
